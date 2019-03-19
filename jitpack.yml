@@ -1,0 +1,2 @@
+before_install:
+  - curl https://gist.github.com/arpithaHM/2dfe82e24cb0b2c9619fd67698e94599 | sh
