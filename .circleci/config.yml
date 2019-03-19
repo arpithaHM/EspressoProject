@@ -18,9 +18,8 @@ jobs:
           paths:
             - ~/.gradle
           key: jars-{{ checksum "build.gradle" }}-{{ checksum  "app/build.gradle" }}
-      - run:
-          name: Copy SDK License
-          command: printf "d56f5187479451eabf01fb78af6dfcb131a6481e\n24333f8a63b6825ea9c5514f83c2829b004d1fee\n" > ~/opt/android/sdk/licenses
+      - run: yes | sdkmanager --licenses
+      - run: yes | sdkmanager --update 
       - run:
           name: Setup emulator
           command: sdkmanager "system-images;android-27;default;armeabi-v7a" && echo "no" | avdmanager create avd -n test -k "system-images;android-16;default;armeabi-v7a"
