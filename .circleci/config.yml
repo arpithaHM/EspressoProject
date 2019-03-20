@@ -32,4 +32,4 @@ jobs:
             adb shell input keyevent 82
       - run:
           name: Run EspressoTests
-          command: ./gradlew ExampleInstrumentedTest
+          command:cd AndroidDemo; ./gradlew ExampleInstrumentedTest
