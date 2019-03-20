@@ -39,8 +39,8 @@ public class testMyTaxi {
     @Rule
     public ActivityTestRule<MainActivity> activity = new ActivityTestRule<>(MainActivity.class);
 
-    MainActivity mActivity = null;
-    UiDevice mDevice;
+    private MainActivity mActivity = null;
+    private UiDevice mDevice;
 
     @Before
     public void setUp() throws Exception{
