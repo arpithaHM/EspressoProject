@@ -11,3 +11,7 @@
    to user in app with the valid contact number.
    
 6. User is not able to login to the app when the device is not connected to internet. App should notify to the user with the valid message.
+
+7. Not able to run the tests on cilcleCI as Running the Android emulator is not currently supported on CircleCI 2.0
+   - https://support.circleci.com/hc/en-us/articles/360000028928-Testing-with-Android-emulator-on-CircleCI-2-0
+   
