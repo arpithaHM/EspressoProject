@@ -1,0 +1,15 @@
+Possible test scenarios :
+
+1. Login to the application with the invalid credentials for multiple times.
+  - App should be locked to the user with the valid pop up message
+  
+2. Keep the app logged in and idle. 
+   - App should be logged out with the specified timeout request
+   
+3. Validate the app during push notification interruption.
+   - App should not be crashed and should be running at the background when user receives the push notification.
+   
+4. Mobile data/wifi interruption
+    - When device lost connectivity with the internet and user is inside the app, app should notify the user with the valid message(connectivity lost)
+    and should not allow user for further actions to be performed in app.
+    
