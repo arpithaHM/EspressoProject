@@ -1,2 +1,2 @@
 # EspressoProject
-Android Espresso UI automation
+Android Espresso Mobile UI automation
