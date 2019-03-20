@@ -1,16 +1,18 @@
-1. Horizontal scroll bar is visible on top of the search text box, which would mislead the user that he/she can scroll horizontally.
+1. Not able to run the tests on cilcleCI as Running the Android emulator is not currently supported on CircleCI 2.0
+   - https://support.circleci.com/hc/en-us/articles/360000028928-Testing-with-Android-emulator-on-CircleCI-2-0
+
+2. Horizontal scroll bar is visible on top of the search text box, which would mislead the user that he/she can scroll horizontally.
    - On click of this scroll bar, "ActivityNotFoundException"  is throwing in the console. Not effecting and UI functionality.
    
-2. Search results should be present in the serach screen, after coming back from the Driver profile screen.
+3. Search results should be present in the serach screen, after coming back from the Driver profile screen.
 
-3. On click of the device back button from the login screen, app should be closed/minimized.
+4. On click of the device back button from the login screen, app should be closed/minimized.
 
-4. Valid pop up message should be shown to the user when tries to login with invalid credentials.
+5. Valid pop up message should be shown to the user when tries to login with invalid credentials.
 
-5. Instead of opening the device dial pad on click of the call button in Driver profile screen, it is better to show popup call option to user in app with the valid contact number.
+6. Instead of opening the device dial pad on click of the call button in Driver profile screen, it is better to show popup call option to user in app with the valid contact number.
    
-6. User is not able to login to the app when the device is not connected to internet. App should notify to the user with the valid message.
+7. User is not able to login to the app when the device is not connected to internet. App should notify to the user with the valid message.
 
-7. Not able to run the tests on cilcleCI as Running the Android emulator is not currently supported on CircleCI 2.0
-   - https://support.circleci.com/hc/en-us/articles/360000028928-Testing-with-Android-emulator-on-CircleCI-2-0
+
    
