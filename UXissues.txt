@@ -1,0 +1,13 @@
+1. Horizontal scroll bar is visible on top of the search text box, which would mislead the user that he/she can scroll horizontally.
+   - On click of this scroll bar, "ActivityNotFoundException"  is throwing in the console. Not effecting and UI functionality.
+   
+2. Search results should be present in the serach screen, after coming back from the Driver profile screen.
+
+3. On click of the device back button from the login screen, app should be closed/minimized.
+
+4. Valid pop up message should be shown to the user when tries to login with invalid credentials.
+
+5. On click of the call button in Driver profile screen, instead of opening the device dial pad it is better to show popup call option
+   to user in app with the valid contact number.
+   
+6. User is not able to login to the app when the device is not connected to internet. App should notify to the user with the valid message.
