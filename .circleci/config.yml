@@ -1,7 +1,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/AndroidDemo/app
+    working_directory: ~/code
     docker:
       # Android the primary container
       - image: circleci/android:api-27-alpha
@@ -11,7 +11,7 @@ jobs:
       - checkout
       - run:
           name: Download Dependencies
-          command: cd AndroidDemo; ./gradlew androidDependencies
+          command: ./gradlew androidDependencies
       
       - run: yes | sdkmanager --licenses || exit 0
       - run: yes | sdkmanager --update || exit 0
@@ -32,4 +32,4 @@ jobs:
             adb shell input keyevent 82
       - run:
           name: Run EspressoTests
-          command: cd AndroidDemo; ./gradlew testMyTaxi
+          command: ./gradlew testMyTaxi
