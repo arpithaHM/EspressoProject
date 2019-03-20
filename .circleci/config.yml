@@ -1,7 +1,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/code
+    working_directory: ~/app
     docker:
       # Android the primary container
       - image: circleci/android:api-27-alpha
@@ -25,4 +25,4 @@ jobs:
       
       - run:
           name: Run EspressoTests
-          command: ./gradlew testMyTaxi
+          command: cd app; ./gradlew testMyTaxi
