@@ -1,7 +1,7 @@
 Possible test scenarios :
 
 1. Login to the application with the invalid credentials for multiple times.
-  - App should be locked to the user with the valid pop up message
+  - App should be locked to the user with the valid pop up message test
   
 2. Keep the app logged in and idle. 
    - App should be logged out with the specified timeout request
